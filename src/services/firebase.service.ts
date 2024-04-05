@@ -53,7 +53,7 @@ class FirebaseService {
    */
   public async addCollection(
     collectionName: string,
-    items: Partial<any>
+    items: Partial<any>,
   ): Promise<void> {
     try {
       const collectionRef = collection(this.firestore, collectionName);
@@ -73,7 +73,7 @@ class FirebaseService {
   public async updateCollection(
     collectionName: string,
     itemId: string,
-    updatedItemData: Partial<any>
+    updatedItemData: Partial<any>,
   ): Promise<void> {
     try {
       const userDocRef = doc(this.firestore, collectionName, itemId);
@@ -91,7 +91,7 @@ class FirebaseService {
    */
   public async deleteCollection(
     collectionName: string,
-    itemId: string
+    itemId: string,
   ): Promise<void> {
     try {
       const userDocRef = doc(this.firestore, collectionName, itemId);

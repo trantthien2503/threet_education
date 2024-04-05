@@ -56,7 +56,7 @@ const LoginForm: React.FunctionComponent = () => {
             JSON.stringify({
               email,
               password,
-            })
+            }),
           );
         } else {
           localStorage.removeItem("remember_user");

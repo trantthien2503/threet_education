@@ -64,10 +64,10 @@ class AuthenticationService {
   async signOut(): Promise<boolean> {
     try {
       await this.auth.signOut();
-      console.log('Đăng xuất thành công');
+      console.log("Đăng xuất thành công");
       return true; // Trả về true khi đăng xuất thành công
     } catch (error) {
-      console.error('Đăng xuất thất bại:', error);
+      console.error("Đăng xuất thất bại:", error);
       throw error;
     }
   }
